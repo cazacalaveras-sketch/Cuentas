@@ -367,7 +367,7 @@
             if(payMicNote) payMicNote.innerText = `Pago reconocido: $${nf.format(parsed)}`;
             speak(`Registrado ${nf.format(parsed)} pesos.`);
           } else {
-            if(payMicNote) payMicNote.innerText = `No entendí monto: \"${transcript}\". Intenta decir un número.`;
+            if(payMicNote) payMicNote.innerText = `No entendí monto: "${transcript}". Intenta decir un número.`;
             speak('No entendí el monto, por favor repite el número.');
           }
         } catch(e){
